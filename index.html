@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <meta name='author' content='Sergey Bakaleynik'>
+    <link rel='stylesheet' type='text/css' href='css/bootstrap.min.css'>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <title>Портфолио</title>
+    <style>
+    .icon {
+        max-width: 50px;
+        max-height: 50px;
+    }
+    </style>
+</head>
+<body>
+    <!--/*===========navigation===========*/-->
+    <nav class='navbar navbar-expand-lg navbar-light bg-light' id='menu'>
+        <a class='nav-link nav-item active' href='#main'>Основное</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class='nav-item'>
+                    <a class='nav-link' href='#education'>Образование</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href='#skills'>Навыки</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href='#hobbies'>Хобби</a>
+                </li>
+                <li class='nav-item'>
+                    <a class='nav-link' href='#achievements'>Достижения</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--/*===========/navigation===========*/-->
+    <!--/*===========tab content===========*/-->
+    <div class='tab-content  card-body'>
+        <!-- #main -->
+        <div class='tab-pane active' id='main' role='tabpanel' aria-labelledby='main-tab'>
+            <div class='container-fluid'>
+                <div class='col-md-12 row'>
+                    <div class='col-2'>
+                        <img src='img/photo_2018-08-23_13-40-56.jpg' alt='Sergey Bakaleynik' style='block-size: 200px;'>
+                    </div>
+                    <div class='col-md-6'>
+                        <p class='jumbotron'>
+                            Я Бакалейник Сергей. Мне 23. Я начинающий профессионал в сфере IT. 
+                            В данный момент являюсь студентом Воронежского государственного университета инженерных технологий.
+                            За время учебы сделал VK чат-бот расписания с использованием Python.
+                            С октября 2017 я работаю в web-стеке. 
+                            Занимаюсь в основном back-end разработкой на Python. 
+                            За это время я научился или усовершенствовал навыки программирования на Python с использование Django framework;
+                            автоматизированному тестированию с использованием Katalon, написанию Unit-тестов; навыки HTML, CSS, JS.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- #main -->
+        <!-- #education -->
+        <div class='tab-pane' id='education' role='tabpanel' aria-labelledby='education-tab'>
+            <div class='container-fluid'>
+                <table class='table col-md-12'>
+                    <thead>
+                        <tr>
+                        <th scope='col'>#</th>
+                        <th scope='col'>Годы</th>
+                        <th scope='col'>Учебное заведение</th>
+                        <th scope='col'>Специальность</th>
+                        <th scope='col'>Степень</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope='row'>1</th>
+                        <td>2011-2015</td>
+                        <td>Мариупольский механико-металлургический колледж ГВУЗ 'ПГТУ'</td>
+                        <td>Разработка программного обеспечения</td>
+                        <td>-</td>
+                        </tr>
+                        <tr>
+                        <th scope='row'>2</th>
+                        <td>2015-2019</td>
+                        <td>Воронежский государственный университет инженерных технологий</td>
+                        <td>Информационные системы и технологии</td>
+                        <td>Бакалавр</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- #education -->
+        <!-- #skills -->
+        <div class='tab-pane' id='skills' role='tabpanel' aria-labelledby='skills-tab'>
+                <div class='container-fluid'>
+                    <table class='table col-md-12'>
+                        <thead>
+                            <tr>
+                                <th scope='col'>#</th>
+                                <th scope='col'>Навык</th>
+                                <th scope='col'>Уровень владения</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope='row'>1</th>
+                                <td>С/С++</td>
+                                <td>High</td>
+                            </tr>
+                            <tr>
+                                <th scope='row'>2</th>
+                                <td>Python</td>
+                                <td>High</td>
+                            </tr>
+                            <tr>
+                                <th scope='row'>3</th>
+                                <td>PHP</td>
+                                <td>Intermediate</td>
+                            </tr>
+                            <tr>
+                                <th scope='row'>4</th>
+                                <td>JS</td>
+                                <td>Intermediate</td>
+                            </tr>
+                            <tr>
+                                <th scope='row'>5</th>
+                                <td>HTML</td>
+                                <td>High</td>
+                            </tr>
+                            <tr>
+                                <th scope='row'>6</th>
+                                <td>CSS</td>
+                                <td>Upper Intermediate</td>
+                            </tr>
+                            <tr>
+                                <th scope='row'>7</th>
+                                <td>Java</td>
+                                <td>Intermediate</td>
+                            </tr>
+                            <tr>
+                                <th scope='row'>8</th>
+                                <td>Объектно-ориентированное программирование</td>
+                                <td>High</td>
+                            </tr>
+                            <tr>
+                                <th scope='row'>9</th>
+                                <td>Katalon</td>
+                                <td>Intermediate</td>
+                            </tr>
+                            <tr>
+                                <th scope='row'>10</th>
+                                <td>English</td>
+                                <td>Intermediate</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+        <!-- #skills -->
+        <!-- #hobbies -->
+        <div class='tab-pane' id='hobbies' role='tabpanel' aria-labelledby='hobbies-tab'>
+            <div class="container-fluid">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <span>Музыка</span>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                Слушать (рок, техно, классика)
+                            </li>
+                            <li class="list-group-item">
+                                Играть на пианино
+                            </li>
+                            <li class="list-group-item">
+                                Петь
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        Играть в игры (MMORPG, ARPG, Battle Royale, MOBA, Strategy)
+                    </li>
+                    <li class="list-group-item">
+                        Программирование (не только то, что касается учебы и работы)
+                    </li>
+                    <li class="list-group-item">
+                        Узнавать любым доступным образом о технологиях и все что с ними связано.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- #hobbies -->
+        <!-- #achievements -->
+        <div class='tab-pane' id='achievements' role='tabpanel' aria-labelledby='achievements-tab'>...</div>
+        <!-- #achievements -->
+    </div>
+    <footer class='card-footer row col-md-12'>
+        <div class="col-md-7 text-md-right">
+            Made by Sergey Bakaleynik © <span id='year'></span>
+        </div>
+        <div class="col-md-5 text-md-right">
+                <span >Контакты: </span>
+                <div>                    
+                    <a href='https://vk.com/imperi0' target='_blank' rel='noopener noreferrer'>
+                        <img class='icon' src='img/vk.png' alt='vk'>
+                    </a>
+                    <a href='https://t.me/BSergey_jr' target='_blank' rel='noopener noreferrer'>
+                        <img class='icon' src='img/telegram.png' alt='telegram'>
+                    </a>
+                    <a href='https://github.com/sergey-jr' target='_blank' rel='noopener noreferrer'>
+                        <img class='icon' src='img/github.png' alt='github'>
+                    </a>
+                    <a href='mailto:bilaserg@gmail.com'>
+                        <img class='icon' src='img/gmail.png' alt='gmail'>
+                    </a>
+                </div>
+        </div>
+    </footer>
+    <!--/*===========tab content===========*/-->
+    <script src='js/jquery-3.3.1.slim.min.js' ></script>
+    <script src='js/popper.min.js' ></script>
+    <script src='js/bootstrap.min.js'></script>
+    <script src='js/tabs.min.js'></script>
+    <script>
+        $(document).ready(function(){
+            $('#menu a').on('click', function (e) {
+                e.preventDefault();
+                $('a.active').removeClass('active')
+                $(this).addClass('active');
+                $(this).tab('show');
+            });
+            $date = new Date();
+            $('#year').html($date.getFullYear() != 2019 ? '2019-' + $date.getFullYear() : '2019');
+        });
+    </script>
+</body>
+</html>
