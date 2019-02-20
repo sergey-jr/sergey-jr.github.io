@@ -51,12 +51,12 @@
                     </div>
                     <div class='col-md-6'>
                         <p class='jumbotron'>
-                            Я Бакалейник Сергей. Мне 23. Я начинающий профессионал в сфере IT. 
+                            Я Бакалейник Сергей. Мне <span id="years"></span>. Я в IT сфере не так давно. 
                             В данный момент являюсь студентом Воронежского государственного университета инженерных технологий.
                             За время учебы сделал VK чат-бот расписания с использованием Python.
                             С октября 2017 я работаю в web-стеке. 
                             Занимаюсь в основном back-end разработкой на Python. 
-                            За это время я научился или усовершенствовал навыки программирования на Python с использованием Django framework;
+                            За это время я  усовершенствовал навыки программирования на Python с использованием Django framework;
                             автоматизированному тестированию с использованием Katalon, написанию Unit-тестов; навыки HTML, CSS, JS.
                         </p>
                     </div>
@@ -227,6 +227,22 @@
     <script src='js/bootstrap.min.js'></script>
     <script src='js/tabs.min.js'></script>
     <script>
+        Date.daysBetween = function( date1, date2 ) {
+        //Get 1 day in milliseconds
+        var one_day=1000*60*60*24;
+
+        // Calculate the difference in milliseconds
+        var difference_ms = date2 - date1;
+            
+        // Convert back to days and return
+        return Math.round(difference_ms/one_day); 
+        }
+        Date.yearsBetween = function( date1, date2 ) {
+        var days = Date.daysBetween(date1, date2);
+            
+        // Convert to years and return
+        return Math.round(days/365); 
+        }
         $(document).ready(function(){
             $('#menu a').on('click', function (e) {
                 e.preventDefault();
@@ -235,7 +251,9 @@
                 $(this).tab('show');
             });
             $date = new Date();
+            $birthDay = new Date(1995,08,02);
             $('#year').html($date.getFullYear() != 2019 ? '2019-' + $date.getFullYear() : '2019');
+            $("#years").html(Date.yearsBetween($birthDay, $date));
         });
     </script>
 </body>
